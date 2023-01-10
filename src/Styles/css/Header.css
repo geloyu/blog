@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.7rem 1.5rem;
+  line-height: 2.2rem;
+  z-index: 20;
+  right: 0;
+  height: 3.6rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaecef;
+}
+
+.headerName {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  vertical-align: middle;
+}
+
+.headerImage {
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+.headerLinks {
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.7rem;
+  display: flex;
+  font-weight: 700;
+  text-decoration: none;
+}
