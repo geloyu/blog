@@ -16,10 +16,27 @@
 .sidebar-links {
   display: block;
   list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  list-style: none;
+}
+
+.sidebar-heading {
+  font-size: 1.1em;
+  font-weight: 700;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.sidebar-heading.headActive {
+  background-color: #eaecef;
+  color: black;
+  border-left-color: black;
+  border-left: 0.5rem solid black;
+}
+
+.sidebar-heading:hover {
+  background-color: #eaecef;
+  color: black;
+  border-left-color: black;
+  border-left: 0.5rem solid black;
 }

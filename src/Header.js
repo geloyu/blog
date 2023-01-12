@@ -11,6 +11,9 @@ function Header() {
           <span className="headerName">TECH RECORD</span>
         </div>
         <div className="headerLinks">
+          <a href="/" rel="noopener noreferrer" className="headerAtag">
+            Home
+          </a>
           <a
             href="https://github.com/geloyu"
             target="_blank"

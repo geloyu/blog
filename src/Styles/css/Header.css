@@ -37,9 +37,14 @@
   right: 1.5rem;
   top: 0.8rem;
   display: flex;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .headerAtag {
   color: black;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.headerSvg {
+  vertical-align: center;
 }
