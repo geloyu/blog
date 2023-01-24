@@ -11,7 +11,7 @@ function Header() {
           <span className="headerName">TECH RECORD</span>
         </div>
         <div className="headerLinks">
-          <a href="/" rel="noopener noreferrer" className="headerAtag">
+          <a href="/Blog" rel="noopener noreferrer" className="headerAtag">
             Home
           </a>
           <a

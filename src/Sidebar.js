@@ -1,50 +1,56 @@
 import React from "react"; // import SidebarItem from
 import "./Styles/css/Sidebar.css";
+import { Link } from "react-router-dom";
+
 function Sidebar() {
-  const activeHeader = (e, data) => {
-    let activeHead = document.querySelector(".headActive");
-    if (activeHead) {
-      activeHead.classList.remove("headActive");
-    }
-    e.target.classList.add("headActive");
+  const activeHeader = (e) => {
+     let activeHead = document.querySelector(".headActive");
+     if (activeHead) {
+       activeHead.classList.remove("headActive");
+     }
 
-    if (data === "profile") {
-      setContent(data);
-    } else if (data === "blog") {
-      openItem(data);
-    }
+     let activeSub = document.querySelector(".subAcitve");
+     if (activeSub) {
+      activeSub.classList.remove("subAcitve");
+     }
+
+     e.target.classList.add("headActive");
+
+     let subMenu = e.target.nextSibling;
+
+     if(subMenu.classList.contains('display')) {
+       e.target.nextSibling.classList.remove('display');
+     } else {
+      e.target.nextSibling.classList.add('display');
+     }
+
   };
 
-  const setContent = (e) => {
-    console.log(e);
-  };
-
-  const openItem = (e) => {
-    console.log(e);
-  };
+  const activeSubMenu = (e) => {
+    let activeSub = document.querySelector(".subAcitve");
+     if (activeSub) {
+      activeSub.classList.remove("subAcitve");
+     }
+     e.target.classList.add("subAcitve");
+  }
 
   return (
     <>
       <div className="sidebar">
         <div className="sidebar-links">
-          <section className="sidebar-group">
-            <p
-              className="sidebar-heading"
-              onClick={(e) => activeHeader(e, "profile")}
-            >
-              ✔ Profile
-              <span className="arrow right"></span>
-            </p>{" "}
-          </section>
-          <section className="sidebar-group">
-            <p
-              className="sidebar-heading"
-              onClick={(e) => activeHeader(e, "blog")}
-            >
-              ✔ Blog
-              <span className="arrow right"></span>
-            </p>{" "}
-          </section>
+          <nav className="sidebar-group">
+            <div className="sidebar-wrap">
+                {/* <Link to="cs" className="sidebar-heading" onClick={activeHeader}>✔ ComputerSience</Link> */}
+                <div className="sidebar-heading" onClick={activeHeader}>✔ ComputerSience</div>
+                <ul className="sidebar-submenu-wrap">
+                    <li className="sidebar-submenu" onClick={activeSubMenu}>ComputerSienceItem1</li>
+                    <li className="sidebar-submenu" onClick={activeSubMenu}>ComputerSienceItem2</li>
+                </ul>
+            </div>
+              <li className="sidebar-heading" onClick={activeHeader}>
+                <Link to="be">✔ Back-End</Link>
+              </li>
+          </nav>
         </div>
       </div>
     </>
