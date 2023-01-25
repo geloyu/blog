@@ -1,38 +1,37 @@
 import React from "react"; // import SidebarItem from
 import "./Styles/css/Sidebar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Sidebar() {
+  // 큰 카테고리 이벤트
   const activeHeader = (e) => {
-     let activeHead = document.querySelector(".headActive");
-     if (activeHead) {
-       activeHead.classList.remove("headActive");
-     }
+    let activeHead = document.querySelector(".headActive");
+    if (activeHead) {
+      activeHead.classList.remove("headActive");
+    }
 
-     let activeSub = document.querySelector(".subAcitve");
-     if (activeSub) {
+    let activeSub = document.querySelector(".subAcitve");
+    if (activeSub) {
       activeSub.classList.remove("subAcitve");
-     }
+    }
 
-     e.target.classList.add("headActive");
+    let subDisplay = document.querySelector(".display");
+    if (subDisplay) {
+      subDisplay.classList.remove("display");
+    }
 
-     let subMenu = e.target.nextSibling;
-
-     if(subMenu.classList.contains('display')) {
-       e.target.nextSibling.classList.remove('display');
-     } else {
-      e.target.nextSibling.classList.add('display');
-     }
-
+    e.target.classList.add("headActive");
+    e.target.nextSibling.classList.add("display");
   };
 
+  // 작은 카테고리 이벤트
   const activeSubMenu = (e) => {
     let activeSub = document.querySelector(".subAcitve");
-     if (activeSub) {
+    if (activeSub) {
       activeSub.classList.remove("subAcitve");
-     }
-     e.target.classList.add("subAcitve");
-  }
+    }
+    e.target.parentNode.classList.add("subAcitve");
+  };
 
   return (
     <>
@@ -40,16 +39,42 @@ function Sidebar() {
         <div className="sidebar-links">
           <nav className="sidebar-group">
             <div className="sidebar-wrap">
-                {/* <Link to="cs" className="sidebar-heading" onClick={activeHeader}>✔ ComputerSience</Link> */}
-                <div className="sidebar-heading" onClick={activeHeader}>✔ ComputerSience</div>
-                <ul className="sidebar-submenu-wrap">
-                    <li className="sidebar-submenu" onClick={activeSubMenu}>ComputerSienceItem1</li>
-                    <li className="sidebar-submenu" onClick={activeSubMenu}>ComputerSienceItem2</li>
-                </ul>
+              {/* <Link to="cs" className="sidebar-heading" onClick={activeHeader}>✔ ComputerSience</Link> */}
+              <div className="sidebar-heading" onClick={activeHeader}>
+                ✔ ComputerSience
+              </div>
+              <ul className="sidebar-submenu-wrap">
+                <li className="sidebar-submenu">
+                  <Link to="cs1" onClick={activeSubMenu}>
+                    ComputerSienceItem1
+                  </Link>
+                </li>
+
+                <li className="sidebar-submenu">
+                  <Link to="cs2" onClick={activeSubMenu}>
+                    ComputerSienceItem2
+                  </Link>
+                </li>
+              </ul>
             </div>
-              <li className="sidebar-heading" onClick={activeHeader}>
-                <Link to="be">✔ Back-End</Link>
-              </li>
+
+            <div className="sidebar-wrap">
+              <div className="sidebar-heading" onClick={activeHeader}>
+                ✔ Back-End
+              </div>
+              <ul className="sidebar-submenu-wrap">
+                <li className="sidebar-submenu">
+                  <Link to="be1" onClick={activeSubMenu}>
+                    Back-End1
+                  </Link>
+                </li>
+                <li className="sidebar-submenu">
+                  <Link to="be2" onClick={activeSubMenu}>
+                    Back-End2
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>

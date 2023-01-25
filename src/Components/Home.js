@@ -5,7 +5,9 @@ function Home() {
   return (
     <>
       <div className="content">
-        <p>홈</p>
+        <p className="title underline">Title</p>
+        <p className="subtitle underline">SubTitle</p>
+        <p className="subject">Subject</p>
       </div>
     </>
   );
