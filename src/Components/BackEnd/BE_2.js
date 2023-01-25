@@ -5,8 +5,10 @@ function BE_2() {
   return (
     <>
       <div className="content">
-        <p className="title underline">BackEnd Title 2</p>
-        <p className="subtitle underline">BackEnd SubTitle 2</p>
+        <p className="title">BackEnd Title 2</p>
+        <hr className="underline"></hr>
+        <p className="subtitle">BackEnd SubTitle 2</p>
+        <hr className="underline"></hr>
         <p className="subject">BackEnd Subject 2</p>
       </div>
     </>

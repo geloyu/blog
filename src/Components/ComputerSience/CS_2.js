@@ -5,8 +5,10 @@ function CS_2() {
   return (
     <>
       <div className="content">
-        <p className="title underline">CS Title 2</p>
-        <p className="subtitle underline">CS SubTitle 2</p>
+        <p className="title">CS Title 2</p>
+        <hr className="underline"></hr>
+        <p className="subtitle">CS SubTitle 2</p>
+        <hr className="underline"></hr>
         <p className="subject">CS Subject 2</p>
       </div>
     </>

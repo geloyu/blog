@@ -5,8 +5,10 @@ function Home() {
   return (
     <>
       <div className="content">
-        <p className="title underline">Title</p>
-        <p className="subtitle underline">SubTitle</p>
+        <p className="title">Title</p>
+        <hr className="underline"></hr>
+        <p className="subtitle">SubTitle</p>
+        <hr className="underline"></hr>
         <p className="subject">Subject</p>
       </div>
     </>
