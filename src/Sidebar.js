@@ -1,6 +1,6 @@
 import React from "react"; // import SidebarItem from
 import "./Styles/css/Sidebar.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   // 큰 카테고리 이벤트
@@ -39,7 +39,6 @@ function Sidebar() {
         <div className="sidebar-links">
           <nav className="sidebar-group">
             <div className="sidebar-wrap">
-              {/* <Link to="cs" className="sidebar-heading" onClick={activeHeader}>✔ ComputerSience</Link> */}
               <div className="sidebar-heading" onClick={activeHeader}>
                 ✔ ComputerSience
               </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Styles/css/Header.css";
 import profile from "./Styles/images/profile.png";
 
@@ -7,8 +8,11 @@ function Header() {
     <>
       <div className="header">
         <div>
-          <img className="headerImage" src={profile} alt="profile"></img>
-          <span className="headerName">TECH RECORD</span>
+          {/* <Link to="/blog"> */}
+          <Link to="www.naver.com">
+            <img className="headerImage" src={profile} alt="profile"></img>
+            <span className="headerName">TECH RECORD</span>
+          </Link>
         </div>
         <div className="headerLinks">
           <a href="/Blog" rel="noopener noreferrer" className="headerAtag">
