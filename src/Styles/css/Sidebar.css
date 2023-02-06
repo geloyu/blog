@@ -42,11 +42,19 @@
 }
 
 .sidebar-submenu.subAcitve {
-  font-weight: 700;
+  font-weight: bold;
+}
+
+.sidebar-submenu.subAcitve a {
+  color: #20c997;
 }
 
 .sidebar-submenu:hover {
-  font-weight: 700;
+  font-weight: bold;
+}
+
+.sidebar-submenu:hover a {
+  color: #20c997;
 }
 
 .sidebar-submenu-wrap {

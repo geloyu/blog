@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import BE_1 from "./Components/BackEnd/BE_1";
 import BE_2 from "./Components/BackEnd/BE_2";
-import CS_1 from "./Components/ComputerSience/CS_1";
+import CSBRWOSER from "./Components/ComputerSience/CS_Browser";
 import CS_2 from "./Components/ComputerSience/CS_2";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
             <Route path="/Blog" element={<Home />}></Route>
             <Route path="/be1" element={<BE_1 />}></Route>
             <Route path="/be2" element={<BE_2 />}></Route>
-            <Route path="/cs1" element={<CS_1 />}></Route>
+            <Route path="/browser" element={<CSBRWOSER />}></Route>
             <Route path="/cs2" element={<CS_2 />}></Route>
           </Routes>
         </div>

@@ -40,12 +40,12 @@ function Sidebar() {
           <nav className="sidebar-group">
             <div className="sidebar-wrap">
               <div className="sidebar-heading" onClick={activeHeader}>
-                ✔ ComputerSience
+                ComputerSience
               </div>
               <ul className="sidebar-submenu-wrap">
                 <li className="sidebar-submenu">
-                  <Link to="cs1" onClick={activeSubMenu}>
-                    ComputerSienceItem1
+                  <Link to="browser" onClick={activeSubMenu}>
+                    웹 브라우저
                   </Link>
                 </li>
 
@@ -59,7 +59,7 @@ function Sidebar() {
 
             <div className="sidebar-wrap">
               <div className="sidebar-heading" onClick={activeHeader}>
-                ✔ Back-End
+                Back-End
               </div>
               <ul className="sidebar-submenu-wrap">
                 <li className="sidebar-submenu">
