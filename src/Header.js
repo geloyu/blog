@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Styles/css/Header.css";
-import profile from "./Styles/images/profile.png";
 
 function Header() {
   const clickHeadEvent = () => {
@@ -26,7 +25,6 @@ function Header() {
       <div className="header">
         <div>
           <Link to="/blog" onClick={clickHeadEvent}>
-            <img className="headerImage" src={profile} alt="profile"></img>
             <span className="headerName">TECH RECORD</span>
           </Link>
         </div>

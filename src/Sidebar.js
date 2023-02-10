@@ -63,8 +63,8 @@ function Sidebar() {
               </div>
               <ul className="sidebar-submenu-wrap">
                 <li className="sidebar-submenu">
-                  <Link to="be1" onClick={activeSubMenu}>
-                    Back-End1
+                  <Link to="spring" onClick={activeSubMenu}>
+                    스프링
                   </Link>
                 </li>
                 <li className="sidebar-submenu">

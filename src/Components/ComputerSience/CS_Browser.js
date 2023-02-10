@@ -6,7 +6,7 @@ function CS_Browser() {
   return (
     <>
       <div className="content">
-        <p className="title">웹 브라우저</p>
+        <p className="title">웹 브라우저 🌐</p>
         <hr className="underline"></hr>
 
         <p className="subtitle">브라우저란 ?</p>
