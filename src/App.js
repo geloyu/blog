@@ -9,6 +9,7 @@ import BESPRING from "./Components/BackEnd/BE_Spring";
 import BESPRINGBATCH from "./Components/BackEnd/BE_Spring_Batch";
 import CSBRWOSER from "./Components/ComputerSience/CS_Browser";
 import CSOOP from "./Components/ComputerSience/CS_OOP";
+import CSREST from "./Components/ComputerSience/CS_REST";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             {/* ComputerSience */}
             <Route path="/browser" element={<CSBRWOSER />}></Route>
             <Route path="/oop" element={<CSOOP />}></Route>
+            <Route path="/rest" element={<CSREST />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

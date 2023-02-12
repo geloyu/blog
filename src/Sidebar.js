@@ -55,6 +55,12 @@ function Sidebar() {
                     객체지향 🪢
                   </Link>
                 </li>
+
+                <li className="sidebar-submenu">
+                  <Link to="rest" onClick={activeSubMenu}>
+                    REST API 📻
+                  </Link>
+                </li>
               </ul>
             </div>
 
