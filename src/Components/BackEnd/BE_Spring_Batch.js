@@ -3,7 +3,7 @@ import "../../Styles/css/Contents.css";
 import batch from "../../Styles/images/batch.png";
 import batch2 from "../../Styles/images/batch2.jpg";
 
-function BE_2() {
+function BE_Spring_Batch() {
   return (
     <>
       <div className="content">
@@ -105,4 +105,4 @@ function BE_2() {
   );
 }
 
-export default BE_2;
+export default BE_Spring_Batch;

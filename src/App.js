@@ -6,9 +6,9 @@ import Header from "./Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import BESPRING from "./Components/BackEnd/BE_Spring";
-import BE_2 from "./Components/BackEnd/BE_2";
+import BESPRINGBATCH from "./Components/BackEnd/BE_Spring_Batch";
 import CSBRWOSER from "./Components/ComputerSience/CS_Browser";
-import CS_2 from "./Components/ComputerSience/CS_2";
+import CSOOP from "./Components/ComputerSience/CS_OOP";
 
 function App() {
   return (
@@ -18,11 +18,16 @@ function App() {
         <div className="body">
           <Sidebar></Sidebar>
           <Routes>
+            {/* Home */}
             <Route path="/Blog" element={<Home />}></Route>
+
+            {/* BackEnd*/}
             <Route path="/spring" element={<BESPRING />}></Route>
-            <Route path="/be2" element={<BE_2 />}></Route>
+            <Route path="/springbatch" element={<BESPRINGBATCH />}></Route>
+
+            {/* ComputerSience */}
             <Route path="/browser" element={<CSBRWOSER />}></Route>
-            <Route path="/cs2" element={<CS_2 />}></Route>
+            <Route path="/oop" element={<CSOOP />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

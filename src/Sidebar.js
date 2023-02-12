@@ -38,6 +38,7 @@ function Sidebar() {
       <div className="sidebar">
         <div className="sidebar-links">
           <nav className="sidebar-group">
+            {/* ComputerSience */}
             <div className="sidebar-wrap">
               <div className="sidebar-heading" onClick={activeHeader}>
                 ComputerSience
@@ -45,18 +46,19 @@ function Sidebar() {
               <ul className="sidebar-submenu-wrap">
                 <li className="sidebar-submenu">
                   <Link to="browser" onClick={activeSubMenu}>
-                    웹 브라우저
+                    웹 브라우저 🌐
                   </Link>
                 </li>
 
                 <li className="sidebar-submenu">
-                  <Link to="cs2" onClick={activeSubMenu}>
-                    ComputerSienceItem2
+                  <Link to="oop" onClick={activeSubMenu}>
+                    객체지향 🪢
                   </Link>
                 </li>
               </ul>
             </div>
 
+            {/* BackEnd */}
             <div className="sidebar-wrap">
               <div className="sidebar-heading" onClick={activeHeader}>
                 Back-End
@@ -64,12 +66,12 @@ function Sidebar() {
               <ul className="sidebar-submenu-wrap">
                 <li className="sidebar-submenu">
                   <Link to="spring" onClick={activeSubMenu}>
-                    스프링
+                    스프링 🍃
                   </Link>
                 </li>
                 <li className="sidebar-submenu">
-                  <Link to="be2" onClick={activeSubMenu}>
-                    Back-End2
+                  <Link to="springbatch" onClick={activeSubMenu}>
+                    스프링 배치 🍃
                   </Link>
                 </li>
               </ul>
