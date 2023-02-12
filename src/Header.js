@@ -32,7 +32,12 @@ function Header() {
           <Link to="/blog" className="headerAtag" onClick={clickHeadEvent}>
             Home
           </Link>
-          <Link to="www.github.com/geloyu" className="headerAtag">
+          <a
+            href="https://github.com/geloyu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="headerAtag"
+          >
             Github
             <span>
               <svg
@@ -55,7 +60,7 @@ function Header() {
                 ></polygon>
               </svg>
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </>

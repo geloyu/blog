@@ -19,7 +19,12 @@ function CS_Browser() {
         <p className="subtitle">브라우저 기본 구조</p>
         <hr className="underline"></hr>
 
-        <img className="contentsImage" src={browser1} alt="browser1"></img>
+        <img
+          className="contentsImage"
+          src={browser1}
+          alt="browser1"
+          style={{ width: "500px" }}
+        ></img>
         <p className="subject">
           <strong>ㆍ 사용자 인터페이스: </strong>
           주소 표시줄, 이전 & 다음 버튼, 즐겨찾기 등 데이터를 표기하는 페이지
