@@ -7,7 +7,7 @@ function BE_Transaction() {
   return (
     <>
       <div className="content">
-        <p className="title">Transaction 🔁</p>
+        <p className="title">Transaction 🍃</p>
         <hr className="underline"></hr>
 
         <p className="subtitle">트랜잭션</p>

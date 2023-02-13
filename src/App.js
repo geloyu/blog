@@ -9,6 +9,7 @@ import BESPRING from "./Components/BackEnd/BE_Spring";
 import BESPRINGBATCH from "./Components/BackEnd/BE_Spring_Batch";
 import BEDBJPA from "./Components/BackEnd/BE_JPA";
 import TRANSACTION from "./Components/BackEnd/BE_Transaction";
+import RDBMS from "./Components/BackEnd/BE_RDBMS";
 import CSBRWOSER from "./Components/ComputerSience/CS_Browser";
 import CSOOP from "./Components/ComputerSience/CS_OOP";
 import CSREST from "./Components/ComputerSience/CS_REST";
@@ -29,6 +30,7 @@ function App() {
             <Route path="/springbatch" element={<BESPRINGBATCH />}></Route>
             <Route path="/dbjpa" element={<BEDBJPA />}></Route>
             <Route path="/transaction" element={<TRANSACTION />}></Route>
+            <Route path="/rdbms" element={<RDBMS />}></Route>
 
             {/* ComputerSience */}
             <Route path="/browser" element={<CSBRWOSER />}></Route>

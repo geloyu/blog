@@ -81,13 +81,18 @@ function Sidebar() {
                   </Link>
                 </li>
                 <li className="sidebar-submenu">
-                  <Link to="dbjpa" onClick={activeSubMenu}>
-                    JPA 📰
+                  <Link to="transaction" onClick={activeSubMenu}>
+                    Transaction 🍃
                   </Link>
                 </li>
                 <li className="sidebar-submenu">
-                  <Link to="transaction" onClick={activeSubMenu}>
-                    Transaction 🔁
+                  <Link to="rdbms" onClick={activeSubMenu}>
+                    RDBMS 📰
+                  </Link>
+                </li>
+                <li className="sidebar-submenu">
+                  <Link to="dbjpa" onClick={activeSubMenu}>
+                    JPA 📰
                   </Link>
                 </li>
               </ul>
