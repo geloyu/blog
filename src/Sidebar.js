@@ -80,6 +80,11 @@ function Sidebar() {
                     스프링 배치 🍃
                   </Link>
                 </li>
+                <li className="sidebar-submenu">
+                  <Link to="dbjpa" onClick={activeSubMenu}>
+                    JPA 📰
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
