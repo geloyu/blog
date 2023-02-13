@@ -85,6 +85,11 @@ function Sidebar() {
                     JPA 📰
                   </Link>
                 </li>
+                <li className="sidebar-submenu">
+                  <Link to="transaction" onClick={activeSubMenu}>
+                    Transaction 🔁
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
