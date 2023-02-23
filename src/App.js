@@ -13,6 +13,7 @@ import RDBMS from "./Components/BackEnd/BE_RDBMS";
 import CSBRWOSER from "./Components/ComputerSience/CS_Browser";
 import CSOOP from "./Components/ComputerSience/CS_OOP";
 import CSREST from "./Components/ComputerSience/CS_REST";
+import LJAVA from "./Components/Language/JAVA_Exception";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
             ></Route>
             <Route path="computer-sience/oop" element={<CSOOP />}></Route>
             <Route path="computer-sience/rest" element={<CSREST />}></Route>
+
+            {/* Language */}
+            <Route path="java/exception" element={<LJAVA />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

@@ -97,6 +97,20 @@ function Sidebar() {
                 </li>
               </ul>
             </div>
+
+            {/* Language */}
+            <div className="sidebar-wrap">
+              <div className="sidebar-heading" onClick={activeHeader}>
+                Language
+              </div>
+              <ul className="sidebar-submenu-wrap">
+                <li className="sidebar-submenu">
+                  <Link to="java/exception" onClick={activeSubMenu}>
+                    JAVA - 예외처리 🦖
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
