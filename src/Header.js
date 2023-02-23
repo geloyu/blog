@@ -47,8 +47,8 @@ function Header() {
                 x="0px"
                 y="0px"
                 viewBox="0 0 100 100"
-                width="15"
-                height="15"
+                width="30"
+                height="20"
               >
                 <path
                   fill="currentColor"
