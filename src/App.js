@@ -26,16 +26,25 @@ function App() {
             <Route path="/Blog" element={<Home />}></Route>
 
             {/* BackEnd*/}
-            <Route path="/spring" element={<BESPRING />}></Route>
-            <Route path="/springbatch" element={<BESPRINGBATCH />}></Route>
-            <Route path="/dbjpa" element={<BEDBJPA />}></Route>
-            <Route path="/transaction" element={<TRANSACTION />}></Route>
-            <Route path="/rdbms" element={<RDBMS />}></Route>
+            <Route path="back-end/spring" element={<BESPRING />}></Route>
+            <Route
+              path="back-end/springbatch"
+              element={<BESPRINGBATCH />}
+            ></Route>
+            <Route path="back-end/db-jpa" element={<BEDBJPA />}></Route>
+            <Route
+              path="back-end/transaction"
+              element={<TRANSACTION />}
+            ></Route>
+            <Route path="back-end/db-rdbms" element={<RDBMS />}></Route>
 
             {/* ComputerSience */}
-            <Route path="/browser" element={<CSBRWOSER />}></Route>
-            <Route path="/oop" element={<CSOOP />}></Route>
-            <Route path="/rest" element={<CSREST />}></Route>
+            <Route
+              path="computer-sience/browser"
+              element={<CSBRWOSER />}
+            ></Route>
+            <Route path="computer-sience/oop" element={<CSOOP />}></Route>
+            <Route path="computer-sience/rest" element={<CSREST />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

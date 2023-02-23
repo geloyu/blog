@@ -45,19 +45,19 @@ function Sidebar() {
               </div>
               <ul className="sidebar-submenu-wrap">
                 <li className="sidebar-submenu">
-                  <Link to="browser" onClick={activeSubMenu}>
+                  <Link to="computer-sience/browser" onClick={activeSubMenu}>
                     웹 브라우저 🌐
                   </Link>
                 </li>
 
                 <li className="sidebar-submenu">
-                  <Link to="oop" onClick={activeSubMenu}>
+                  <Link to="computer-sience/oop" onClick={activeSubMenu}>
                     객체지향 🪢
                   </Link>
                 </li>
 
                 <li className="sidebar-submenu">
-                  <Link to="rest" onClick={activeSubMenu}>
+                  <Link to="computer-sience/rest" onClick={activeSubMenu}>
                     REST API 📻
                   </Link>
                 </li>
@@ -71,27 +71,27 @@ function Sidebar() {
               </div>
               <ul className="sidebar-submenu-wrap">
                 <li className="sidebar-submenu">
-                  <Link to="spring" onClick={activeSubMenu}>
+                  <Link to="back-end/spring" onClick={activeSubMenu}>
                     스프링 🍃
                   </Link>
                 </li>
                 <li className="sidebar-submenu">
-                  <Link to="springbatch" onClick={activeSubMenu}>
+                  <Link to="back-end/springbatch" onClick={activeSubMenu}>
                     스프링 배치 🍃
                   </Link>
                 </li>
                 <li className="sidebar-submenu">
-                  <Link to="transaction" onClick={activeSubMenu}>
+                  <Link to="back-end/transaction" onClick={activeSubMenu}>
                     Transaction 🍃
                   </Link>
                 </li>
                 <li className="sidebar-submenu">
-                  <Link to="rdbms" onClick={activeSubMenu}>
+                  <Link to="back-end/db-rdbms" onClick={activeSubMenu}>
                     RDBMS 📰
                   </Link>
                 </li>
                 <li className="sidebar-submenu">
-                  <Link to="dbjpa" onClick={activeSubMenu}>
+                  <Link to="back-end/db-jpa" onClick={activeSubMenu}>
                     JPA 📰
                   </Link>
                 </li>
