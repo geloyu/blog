@@ -31,10 +31,26 @@
 
 .home_content {
   font-size: 30px;
-  width: 100%;
-  /* padding: 70px 0px 100px 0px; */
+  height: 100vh;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  flex: 1;
 }
-
+.home_content::before {
+  content: "";
+  display: block;
+  background: url(../images/back.gif);
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
 .home_image {
   width: 30%;
   position: absolute;
@@ -47,12 +63,13 @@
 .home_subtitle {
   font-size: 20px;
   font-weight: 600;
-  padding-bottom: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 40px;
+  width: 100%;
+  text-align: center;
 }
 
 .contentsImage {

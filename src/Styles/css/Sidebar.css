@@ -1,20 +1,24 @@
 .sidebar {
-  left: 0;
-  bottom: 0;
-  top: 50px;
+  height: 800px;
   width: 270px;
+  /* flex: 1; */
+  /* height: 100vh; */
   font-size: 15px;
   background-color: #fff;
   border-right: 1px solid #eaecef;
-  position: fixed;
-  overflow-y: auto;
+  /* position: relative; */
+  /* overflow-y: auto; */
+  overflow: hidden;
   z-index: 10;
+  margin-top: 50px;
 }
 
 .sidebar-links {
   display: block;
   list-style-type: disc;
   margin-top: 25px;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .sidebar-heading {
@@ -64,4 +68,18 @@
 
 .sidebar-submenu-wrap.display {
   display: block;
+}
+
+.sidebar-group {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+  .home_content {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
